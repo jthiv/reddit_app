@@ -1,0 +1,6 @@
+# PyCharm Files
+.idea
+
+#Python
+__pycache__
+*.pyc
