@@ -7,6 +7,7 @@ import praw
 def main():
 
     parser = ConfigParser.ConfigParser()
+    parser.read('reddit_app.default.cfg')
     parser.read('reddit_app.cfg')
     reddit = praw.Reddit(client_id=parser.get('reddit', 'client_id'),
                          client_secret=parser.get('reddit', 'client_secret'),
